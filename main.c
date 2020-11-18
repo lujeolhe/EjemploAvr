@@ -5,6 +5,7 @@
  * Author : lujeo
  */ 
 #define F_CPU 1000000
+#define dot 7
 
 /*//////////////////////////////////////////////////
 /			LIBRERIAS
@@ -63,7 +64,7 @@ int main(void)
 		PORTB=bcd_2_7seg(display0);
 		PORTD=0b00000001;
 		_delay_ms(8);
-		PORTB=bcd_2_7seg(display1);
+		PORTB=bcd_2_7seg(display1)|1<<dot;
 		PORTD=0b00000010;
 		_delay_ms(8);	
 	}
@@ -78,7 +79,7 @@ ISR(TIMER1_COMPA_vect){
 ISR(ADC_vect){
 	//el valor del registro ADC(ADCH y ADCL) solo puede ser leido una vez cada conversion
 	uint16_t lecturaADC=ADC;
-	uint8_t valorAjustado=lecturaADC/11;
+	uint8_t valorAjustado=lecturaADC/40;
 	uint8_t decenas=valorAjustado/10;
 	uint8_t unidades=valorAjustado%10;
 	display0=unidades;
