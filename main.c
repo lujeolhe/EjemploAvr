@@ -49,6 +49,9 @@ int main(void)
 	sei();
 	DDRB =0b11111111;
 	DDRD =0b00000011;
+	//config del ADC
+	ADCSRA|=1<<ADEN|1<<ADIE|1<<ADPS2|1<<ADPS1|1<<ADPS0;
+	ADMUX|= 1<<REFS1|1<<REFS0;
 	
 	//config para prescalador de 8
 	TCCR1B |= 1<<CS11 | 1<<WGM12;
@@ -62,9 +65,7 @@ int main(void)
 		_delay_ms(8);
 		PORTB=bcd_2_7seg(display1);
 		PORTD=0b00000010;
-		_delay_ms(8);
-		
-			
+		_delay_ms(8);	
 	}
 }
 
@@ -72,14 +73,16 @@ int main(void)
 /			FUNCIONES DE INTERRUPCION
 //////////////////////////////////////////////////*/
 ISR(TIMER1_COMPA_vect){
-	static uint8_t conteo=0;
-	conteo=(conteo+1)%100;
-	display0=conteo%10;
-	display1=conteo/10;
-	
+	ADCSRA|=1<<ADSC;	
 }
 ISR(ADC_vect){
-	
+	//el valor del registro ADC(ADCH y ADCL) solo puede ser leido una vez cada conversion
+	uint16_t lecturaADC=ADC;
+	uint8_t valorAjustado=lecturaADC/11;
+	uint8_t decenas=valorAjustado/10;
+	uint8_t unidades=valorAjustado%10;
+	display0=unidades;
+	display1=decenas;
 }
 
 ////////////////BCD to 7seg//////////////////

@@ -1,13 +1,13 @@
 <circuit animate="0" type="simulide_0.4" reactStep="50" noLinAcc="5" speed="1000000">
  
 Voltage Source-104: 
-<item x="-288" vflip="1" y="-444" valLabRot="0" Unit=" V" rotation="0" itemtype="Voltage Source" objectName="Voltage Source-104" labelrot="0" labelx="-40" Show_id="false" id="Voltage Source-104" Voltage="5" valLabelx="-26" hflip="1" valLabely="10" Show_Volt="true" labely="-80"/>
+<item x="-452" vflip="1" y="-440" valLabRot="0" Unit=" V" rotation="0" itemtype="Voltage Source" objectName="Voltage Source-104" labelrot="0" labelx="-40" Show_id="false" id="Voltage Source-104" Voltage="5" valLabelx="-26" hflip="1" valLabely="10" Show_Volt="true" labely="-80"/>
  
 Ground-103: 
-<item labely="8" itemtype="Ground" labelrot="0" hflip="1" valLabelx="0" rotation="0" id="Ground-103" y="-248" labelx="-16" objectName="Ground-103" Show_id="false" x="-232" valLabely="0" valLabRot="0" vflip="1"/>
+<item labely="8" itemtype="Ground" labelrot="0" hflip="1" valLabelx="0" rotation="0" id="Ground-103" y="-192" labelx="-16" objectName="Ground-103" Show_id="false" x="-292" valLabely="0" valLabRot="0" vflip="1"/>
  
 Potentiometer-95: 
-<item x="-232" Resistance="10" vflip="1" y="-372" Value_Ohm="9120" valLabRot="0" Unit=" kΩ" rotation="90" itemtype="Potentiometer" objectName="Potentiometer-95" labelrot="0" labelx="-16" Show_id="false" id="Potentiometer-95" valLabelx="10" hflip="1" valLabely="-20" Show_res="true" labely="-40"/>
+<item x="-292" Resistance="10" vflip="1" y="-368" Value_Ohm="6970" valLabRot="0" Unit=" kΩ" rotation="90" itemtype="Potentiometer" objectName="Potentiometer-95" labelrot="0" labelx="-16" Show_id="false" id="Potentiometer-95" valLabelx="10" hflip="1" valLabely="-20" Show_res="true" labely="-40"/>
  
 Resistor-91: 
 <item x="-472" Resistance="470" vflip="1" y="-244" valLabRot="0" Unit=" Ω" rotation="0" itemtype="Resistor" objectName="Resistor-91" labelrot="0" labelx="-12" Show_id="false" id="Resistor-90" valLabelx="-16" hflip="1" valLabely="6" Show_res="true" labely="-20"/>
@@ -187,13 +187,13 @@ Connector-94:
 <item x="-488" vflip="1" pointList="-488,-244,-628,-244,-628,-268,-648,-268" y="-244" enodeid="enode-94" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-94" startpinid="Resistor-91-lPin" labelrot="0" labelx="-16" Show_id="false" id="Connector-94" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="BJT-3-base"/>
  
 Connector-106: 
-<item x="-232" vflip="1" pointList="-232,-356,-232,-264" y="-356" enodeid="enode-106" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-106" startpinid="Potentiometer-95-PinB" labelrot="0" labelx="-16" Show_id="false" id="Connector-106" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="Ground-103-Gnd"/>
+<item x="-292" vflip="1" pointList="-292,-352,-292,-208" y="-352" enodeid="enode-106" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-106" startpinid="Potentiometer-95-PinB" labelrot="0" labelx="-16" Show_id="false" id="Connector-106" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="Ground-103-Gnd"/>
  
 Connector-108: 
-<item x="-272" vflip="1" pointList="-272,-444,-232,-444,-232,-388" y="-444" enodeid="enode-108" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-108" startpinid="Voltage Source-104-outPin" labelrot="0" labelx="-16" Show_id="false" id="Connector-108" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="Potentiometer-95-PinA"/>
+<item x="-436" vflip="1" pointList="-436,-440,-292,-440,-292,-384" y="-440" enodeid="enode-108" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-108" startpinid="Voltage Source-104-outPin" labelrot="0" labelx="-16" Show_id="false" id="Connector-108" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="Potentiometer-95-PinA"/>
  
 Connector-111: 
-<item x="-248" vflip="1" pointList="-248,-372,-336,-372,-336,-376" y="-372" enodeid="enode-111" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-111" startpinid="Potentiometer-95-PinM" labelrot="0" labelx="-16" Show_id="false" id="Connector-111" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="atmega32-10-PA0"/>
+<item x="-308" vflip="1" pointList="-308,-368,-336,-368,-336,-376" y="-368" enodeid="enode-111" valLabRot="0" rotation="0" itemtype="Connector" objectName="Connector-111" startpinid="Potentiometer-95-PinM" labelrot="0" labelx="-16" Show_id="false" id="Connector-111" valLabelx="0" hflip="1" valLabely="0" labely="-24" endpinid="atmega32-10-PA0"/>
  
 PlotterWidget-80: 
 <item visible="false" enabled="true" baseSize="" minimumSize="" height="200" windowModality="0" pos="" y="0" cursor="" fullScreen="false" accessibleName="" minimumHeight="200" sizeHint="" frameSize="" acceptDrops="false" layoutDirection="0" contextMenuPolicy="1" maximumHeight="200" minimized="false" isActiveWindow="true" toolTip="" Tracks="1" geometry="" normalGeometry="" modal="false" maximized="false" minimumWidth="200" windowTitle="" statusTip="" windowIcon="" windowModified="false" accessibleDescription="" styleSheet="" sizeIncrement="" updatesEnabled="true" windowFilePath="" maximumSize="" focus="false" sizePolicy="" childrenRegion="" frameGeometry="" rect="" mouseTracking="false" minimumSizeHint="" size="" windowIconText="" whatsThis="" maximumWidth="1000" objectName="PlotterWidget-80" x="0" toolTipDuration="-1" focusPolicy="0" autoFillBackground="false" inputMethodHints="0" childrenRect="" MaxVolt="500" MinVolt="-500" width="200" windowOpacity="1" palette="" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" locale="" Scale="1" itemtype="Plotter"/>
